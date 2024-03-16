@@ -40,7 +40,7 @@ fun MyText() {
         fontStyle = FontStyle.Italic,
         color = colorResource(id = R.color.black),
         fontSize = 30.sp,
-        fontWeight = FontWeight.Bold,
+        fontWeight = FontWeight.Bold
     )
     //TODO add your code here
 }
