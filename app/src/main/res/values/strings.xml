@@ -18,5 +18,13 @@
     <string name="first_button">первый</string>
     <string name="second_button">второй</string>
     <string name="third_button">третий</string>
+    <string name="menu_button">меню</string>
+    <string name="MyComposeApp">MyComposeApp</string>
+    <string name="button_Row">контейнер Row</string>
+    <string name="button_Column">контейнер Column</string>
+    <string name="button_Box">контейнер Box</string>
+    <string name="button_Surface">контейнер Surface</string>
+    <string name="button_Scaffold">контейнер Scaffold</string>
+
 
 </resources>
