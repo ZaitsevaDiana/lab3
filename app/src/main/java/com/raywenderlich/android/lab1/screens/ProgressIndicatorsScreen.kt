@@ -27,7 +27,7 @@ fun ProgressIndicatorScreen() {
             strokeWidth = 5.dp
         )
         LinearProgressIndicator(progress = 0.5f)
-        //TODO add your code here
+
     }
 
     BackButtonHandler {
