@@ -6,8 +6,16 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.Button
 import androidx.compose.material.ButtonDefaults
+import androidx.compose.material.FloatingActionButton
+import androidx.compose.material.Icon
+import androidx.compose.material.RadioButton
+import androidx.compose.material.RadioButtonDefaults
 import androidx.compose.material.Text
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -18,6 +26,7 @@ import com.raywenderlich.android.lab1.R
 import com.raywenderlich.android.lab1.router.BackButtonHandler
 import com.raywenderlich.android.lab1.router.FundamentalsRouter
 import com.raywenderlich.android.lab1.router.Screen
+
 
 @Composable
 fun ExploreButtonsScreen() {
@@ -56,10 +65,38 @@ fun MyButton() {
 
 @Composable
 fun MyRadioGroup() {
+    val radioButtons = listOf(0, 1, 2) //1
+
+    val selectedButton = remember { mutableStateOf(radioButtons.first()) } //2
+
+    Column {
+        radioButtons.forEach {index -> //3
+            val isSelected = index == selectedButton.value
+            val colors = RadioButtonDefaults.colors(  //4
+                selectedColor = colorResource(id = R.color.purple_500),
+                unselectedColor = colorResource(id = R.color.black),
+                disabledColor = Color.LightGray
+            )
+
+            RadioButton(  //5
+                colors = colors,
+                selected = isSelected,
+                onClick = { selectedButton.value = index } //6
+            )
+        }
+    }
     //TODO add your code here
 }
 
 @Composable
 fun MyFloatingActionButton() {
-    //TODO add your code here
+    FloatingActionButton(
+        onClick = {},
+        backgroundColor = colorResource(id = R.color.purple_700),
+        contentColor = Color.White,
+        content = {
+            Icon(Icons.Filled.Favorite, contentDescription = "Test FAB")
+        }
+
+    )
 }
