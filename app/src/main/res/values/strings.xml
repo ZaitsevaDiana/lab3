@@ -34,6 +34,7 @@
     <string name="coroutines_inKotlin">Корутины в Kotlin</string>
     <string name="button_Scrolling">контейнер Scrolling</string>
     <string name="cover_books">обложки книг</string>
+    <string name="button_List">Список</string>
 
 
 </resources>
