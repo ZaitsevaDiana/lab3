@@ -12,9 +12,9 @@
     <string name="title_alertDialog">Внимание</string>
     <string name="alertDialog_about">Это диалоговое окно</string>
     <string name="insert_email">Email</string>
-    <string name="first" />
-    <string name="second" />
-    <string name="third" />
+    <string name="first">первый</string>
+    <string name="second">второй</string>
+    <string name="third" >третий</string>
     <string name="first_button">первый</string>
     <string name="second_button">второй</string>
     <string name="third_button">третий</string>
@@ -25,6 +25,14 @@
     <string name="button_Box">контейнер Box</string>
     <string name="button_Surface">контейнер Surface</string>
     <string name="button_Scaffold">контейнер Scaffold</string>
+    <string name="android" />
+    <string name="kotlin"/>
+    <string name="swift"/>
+    <string name="ios"/>
+    <string name="android_new">Усовершенствованная архитектура Android</string>
+    <string name="kotlin_learn">Изучение Kotlin</string>
+    <string name="coroutines_inKotlin">Корутины в Kotlin</string>
+    <string name="button_Scrolling">контейнер Scrolling</string>
 
 
 </resources>
