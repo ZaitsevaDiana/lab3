@@ -2,7 +2,9 @@ package com.raywenderlich.android.lab1.screens
 
 
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.Button
 import androidx.compose.material.ButtonDefaults
 import androidx.compose.material.Surface
@@ -25,6 +27,7 @@ fun NavigationScreen() {
         modifier = Modifier.fillMaxSize()
     ) {
         Column(
+            modifier = Modifier.verticalScroll(rememberScrollState()),
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
@@ -35,6 +38,7 @@ fun NavigationScreen() {
             NavigationButton(stringResource(id = R.string.button_progress), Screen.ProgressIndicator)
             NavigationButton(stringResource(id = R.string.button_alertDialog), Screen.AlertDialog)
             NavigationButton(stringResource(id = R.string.button_Box), Screen.Box)
+            NavigationButton(stringResource(id = R.string.button_Row), Screen.Row)
             NavigationButton(stringResource(id = R.string.button_Column), Screen.Column)
             NavigationButton(stringResource(id = R.string.button_Surface), Screen.Surface)
             NavigationButton(stringResource(id = R.string.button_Scaffold), Screen.Scaffold)
