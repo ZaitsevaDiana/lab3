@@ -35,6 +35,8 @@
     <string name="button_Scrolling">контейнер Scrolling</string>
     <string name="cover_books">обложки книг</string>
     <string name="button_List">Список</string>
+    <string name="grid_icon">Сетка с тремя столбцами</string>
+
 
 
 </resources>
